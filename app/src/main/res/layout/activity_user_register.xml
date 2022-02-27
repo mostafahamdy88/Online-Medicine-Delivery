@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_register"
+    tools:context=".UserRegister">
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        style="@style/fontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Create Account"
+        android:textColor="@color/MainColor"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:src="@drawable/user"/>
+        <EditText
+            android:id="@+id/edt_register_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/username"
+            android:textColor="@color/BlackColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_register_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:src="@drawable/mail"/>
+        <EditText
+            android:id="@+id/edt_register_mail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/mail"
+            android:textColor="@color/BlackColor"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout_register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:src="@drawable/phone"/>
+        <EditText
+            android:id="@+id/edt_register_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/phone"
+            android:textColor="@color/BlackColor"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:src="@drawable/lock"/>
+        <EditText
+            android:id="@+id/edt_register_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/password"
+            android:textColor="@color/BlackColor"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:src="@drawable/eye"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/LinearLayout_register_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button"
+        android:text="Register"
+        android:textSize="30sp"
+        style="@style/ButtonTextStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already registered?"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="110dp"
+        style="@style/fontStyle"
+        android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:layout_marginTop="15dp"
+            style="@style/fontStyle"
+            android:textSize="15sp"
+            android:textColor="@color/MainColor"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

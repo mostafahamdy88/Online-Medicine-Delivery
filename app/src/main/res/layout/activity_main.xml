@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_choice"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="270dp"
+        android:layout_height="300dp"
+        android:src="@drawable/appicon"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_continue"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_button_white"
+        android:layout_below="@+id/iv_logo"
+        android:fontFamily="sans-serif"
+        android:text="Continue as"
+        style="@style/fontStyle"
+        android:textColor="@color/MainColor"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/linear_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_continue"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_visitor"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Visitor"
+            style="@style/ButtonTextStyle"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="User"
+            style="@style/ButtonTextStyle"
+            android:layout_marginLeft="80dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
